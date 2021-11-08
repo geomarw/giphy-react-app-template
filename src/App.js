@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import { GifList, GifSelected } from "./components";
+import "./App.css";
+const App = () => (
+  <>
+    <h1>Giphy App</h1>
+    <div className="search">
+      <input className="search-input" type="text" />
+      <input className="search-button" type="submit" />
     </div>
-  );
-}
+    <div className="content">
+      <GifList  />
+      {/*gifSelected.images*/ true && <GifSelected />}
+    </div>
+  </>
+);
 
 export default App;

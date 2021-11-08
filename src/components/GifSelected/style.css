@@ -1,0 +1,13 @@
+.gif-selected {
+  min-width: 65vw;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.gif-selected a img {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-left: auto;
+}
